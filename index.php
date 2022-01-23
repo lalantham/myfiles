@@ -43,8 +43,9 @@
         <h1 class="mt-5">OCI Testing Labs</h1>
         <p class="lead">This Template for My Testing Oracle Cloud Learning Testing Purpose.</p>
         <p class="footer mt-auto py-3 bg-light p-5">
+        <?php $localIP = getHostByName(getHostName());?>
           <b>Server: </b> <?php echo gethostname();?> </br>
-          <b>Ip: </b> <?php echo $_SERVER['REMOTE_ADDR'];?>
+          <b>Ip: </b> <?php echo $localIP;?>
         </p>
       </div>
     </main>
